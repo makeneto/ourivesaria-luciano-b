@@ -5,9 +5,9 @@ import Loading from "./components/Loading"
 import NotFoundPage from "./pages/NotFoundPage"
 import Layout from "./components/Layout"
 
-export default function App() {
-    const Home = lazy(() => import("./pages/Home"))
+const Home = lazy(() => import("./pages/Home"))
 
+export default function App() {
     return (
         <Suspense fallback={<Loading />}>
             <BrowserRouter>
